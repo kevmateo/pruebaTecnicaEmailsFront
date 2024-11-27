@@ -7,15 +7,14 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn-primary {
+  @apply bg-dark_blue hover:bg-dark_blue_hover text-white font-medium text-xl px-[15px] py-[10px] rounded-[10px] w-auto h-auto ;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn-sin-fondo {
+  @apply text-black font-semibold text-xl px-[15px] py-[10px] rounded-[10px] w-auto h-auto hover:bg-light_gray;
+}
+
+.input-normal{
+  @apply bg-white text-black px-[10px] rounded-[5px] h-[40px] border border-gray focus:outline-none;
 }
